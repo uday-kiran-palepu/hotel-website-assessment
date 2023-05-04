@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+    <!-- To get the toggle function for the small devices we used this  button-card section -->
+        <div class="button-card">
+            <button onclick="showNavbar()" class="nav-button">Navbar<br/></button>
+        </div>
+
+    <!-- Navbar section -->
+        <nav class="navbar show" id="navItems">
+
+    <!-- Navbar items section -->
+            <ul class="nav-items">
+                <li><a>Home</a></li>
+                <li><a>Order</a></li>
+                <li><a>Food</a></li>
+                <li><a>Restaurant</a></li>
+                <li><a>Testimonials</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+
+    <!-- Navbar Icons Section -->
+            <div class="nav-icons">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/005/043/127/small/a-phone-icon-in-a-round-circle-free-vector.jpg" class="nav-phone-icon" />
+                <img src="https://cdn.icon-icons.com/icons2/1369/PNG/512/-shopping-cart_90604.png" class="nav-cart-icon" />
+            </div>
+        </nav>
+        
+        
+
+    <!-- Website's Homepage section  -->
+        <div class="homepage-bg-container">
+            <div class="homepage-text-card">
+                <h1 style="font-size: 48px; padding-bottom: 10px;">LOREM IPSUM</h1>
+                <p style="font-size: 15px;">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+
+    <!-- Bottom Order now section -->
+        <div class="order-now-section">
+            <h1 class="order-heading">Order Now</h1>
+
+            <!-- Food Items cards Container -->
+            <div class="cards-container">
+
+                <!-- Burger food item card container -->
+                <div class="food-item-container">
+                    <img src="img4.jpg" class="food-item-img" />
+                    <div>
+                        <h1 class="food-item-name">BURGER</h1>
+                        <p>Lorem Ipsum has been the industry's standard dummy text</p>
+                    </div>
+                </div>
+
+                <!-- Pizza food item card container -->
+                <div class="food-item-container">
+                    <img src="img2.jpg" class="food-item-img" />
+                    <div>
+                        <h1 class="food-item-name">PIZZA</h1>
+                        <p>Lorem Ipsum has been the industry's standard dummy text</p>
+                    </div>
+                </div>
+
+                <!-- Pasta food item card container -->
+                <div class="food-item-container">
+                    <img src="img3.jpg" class="food-item-img" />
+                    <div>
+                        <h1 class="food-item-name">PASTA</h1>
+                        <p>Lorem Ipsum has been the industry's standard dummy text</p>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Order Button Section -->
+            <button class="order-button">Order</button>
+        </div>
+    </div>
+    
+
+    <!-- javascript code to achieve the Navbar Functionality for small devices -->
+
+    <script>
+        function showNavbar() {
+          let navItemsEl = document.getElementById('navItems');
+          navItems.classList.toggle('show')
+        }
+    </script>
+
+
+</body>
+
+</html>
